@@ -1,0 +1,97 @@
+html, body {
+    background-color: #1f1f1f;
+}
+
+.page {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#trackURL {
+    display: inline-block;
+    width: 450px;
+    height: 25px;
+    font-size: 15px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button {
+    background: linear-gradient(#383738, #161616);
+    border: none;
+    color: #a9a9a9;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+button:active {
+    background: linear-gradient(#036692, #033f58);
+    color: #fff;
+}
+button:focus, select:focus {
+    outline:0;
+}
+
+.custom-select {
+    display: inline;
+    position: relative;
+}
+#trackSelect, #setSelect {
+    background: no-repeat 96% 0;
+    background-color: #fff;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 29px;
+    overflow: hidden;
+    width: 250px;
+}
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 134px;
+}
+#mixerControls {
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+#startTimestamp, #endTimestamp {
+    padding: 5px 8px;
+}
+#playSet {
+    margin-left: 10px;
+}
+
+.video {
+    display: inline-block;
+    height: 189px;
+    width: 336px;
+    background-color: #111111;
+    vertical-align: middle;
+}
+.deck {
+    padding: 30px;
+    display: inline-block;
+}
+.disc {
+    display: inline-block;
+    vertical-align: middle;
+    height: 120px;
+    width: 120px;
+    filter: invert(90%);
+    padding: 5px;
+}
+.spin-animation {
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+#playSet {
+    display: inline-block;
+}

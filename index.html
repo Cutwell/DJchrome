@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>D.J. Chrome</title>
+        <link rel=icon type=image/png href=favicon.png>
+
+        <meta name="description" content="Web-based DJ set scripting tool">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js></script>
+        <script src="http://www.youtube.com/player_api"></script>
+
+        <script src=js/player.js></script>
+        <script src=js/mixer.js></script>
+        <script src=js/ready.js></script>
+    </head>
+    <body>
+        <div id=pages>
+            
+            <div class=page>
+
+                <input id=trackURL placeholder="Add a track by YouTube URL">
+                <button id=addButton>Add</button><br><br>
+                
+                <div class=custom-select>
+                    <select id=trackSelect>
+                        <option value=null id=trackCount>Library - 0 Tracks</option>
+                    </select>
+                </div>
+
+                <div class=custom-select>
+                    <select id=setSelect>
+                        <option value=null id=setCount>Set - 0 Tracks</option>
+                    </select>
+                </div><br><br>
+
+                <div id=leftdeck class=deck>
+                    <img class=disc id=leftdisc src=favicon.png>
+                    <div class=video id=0></div>
+                </div>
+
+                <button id=playSet>Load Set</button>
+                
+                <div id=rightdeck class=deck>
+                    <div class=video id=1></div>
+                    <img class=disc id=rightdisc src=favicon.png>
+                </div>
+                
+                <div id=mixerControls>
+                    <input id=startTimestamp type="time" step="1" value="00:00:00" min="00:00:00" max="00:00:00">
+                    <input id=endTimestamp type="time" step="1" value="00:00:00" min="00:00:00" max="00:00:00">
+                    <button id=setButton>Add to set</button>
+                    <button id=removeButton>Remove from Library</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
